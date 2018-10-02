@@ -18,3 +18,12 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <aside id="secondary" class="widget-area" role="complementary" aria-label="<?php esc_attr_e( 'Blog Sidebar', 'twentyseventeen' ); ?>">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
 </aside><!-- #secondary -->
+
+<!-- manually add widget to sidebar--> 
+<?php if ( is_active_sidebar( 'home_right_1' ) ) : ?>
+	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+		<?php dynamic_sidebar( 'home_right_1' ); ?>
+	</div><!-- #primary-sidebar -->
+<?php endif; ?>
+
+<!-- manually add widget to sidebar-->

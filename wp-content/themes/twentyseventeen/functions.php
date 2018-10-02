@@ -343,6 +343,46 @@ function twentyseventeen_widgets_init() {
 }
 add_action( 'widgets_init', 'twentyseventeen_widgets_init' );
 
+// custom widget from manual
+// https://codex.wordpress.org/Widgetizing_Themes
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name'          => 'Home right sidebar',
+		'id'            => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );
+
+//custom end
+
+
+function wpsites_before_post_widget( $content ) {
+	if ( is_singular( array( 'post', 'page' ) ) && is_active_sidebar( 'before-post' ) && is_main_query() ) {
+		dynamic_sidebar('before-post');
+	}
+	return $content;
+}
+add_filter( 'the_content', 'wpsites_before_post_widget' );
+
+register_sidebar( array(
+	'id'          => 'before-post',
+	'name'        => 'Before Posts Widget',
+	'description' => __( 'Add widget before post content.', 'text_domain' ),
+	'before_widget' => '<div>',
+	'after_widget'  => '</div>',
+) );
+
+
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and
  * a 'Continue reading' link.
