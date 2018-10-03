@@ -584,3 +584,14 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  * SVG icons functions and filters.
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
+
+
+/*
+ * A simple function to control the number of Twenty Seventeen Theme Front Page Sections
+ * Source: wpcolt.com
+ */
+function wpc_custom_front_sections( $num_sections )
+	{
+		return 3; //Change this number to change the number of the sections.
+	}
+add_filter( 'twentyseventeen_front_page_sections', 'wpc_custom_front_sections' );
