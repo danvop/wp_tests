@@ -22,7 +22,11 @@
   </head>
 
   <body>
-
+  <div class="custom-header">
+      <h1><?php bloginfo('name'); ?></h1>
+      <p><?php bloginfo('description'); ?></p>
+      <p><?php bloginfo('stylesheet_directory'); ?></p>
+  </div>
     <div class="container">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
