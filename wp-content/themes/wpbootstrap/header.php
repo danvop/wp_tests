@@ -27,6 +27,21 @@
       <p><?php bloginfo('description'); ?></p>
       <p><?php bloginfo('stylesheet_directory'); ?></p>
   </div>
+  <div id="navmenu">
+    <ul>
+      <li><a href="<?php echo get_settings('home'); ?>">HOME</a></li>
+      <li><a href="wordpress/recipes/">RECIPES</a></li>
+      <li><a href="wordpress/travel/">TRAVEL</a></li>
+      <li><a href="http://www.wordpress.org">WORDPRESS</a></li>
+    </ul>
+  </div>
+  <div id="navmenu">
+    <ul>
+    <li><a href="<?php echo get_settings('home'); ?>">HOME</a></li>
+    <?php wp_list_categories('orderby=name&include=1,3,4,5'); ?>
+    <li><a href="http://www.wordpress.org">WORDPRESS</a></li>
+    </ul>
+  </div>
     <div class="container">
       <header class="blog-header py-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
