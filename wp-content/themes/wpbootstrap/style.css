@@ -147,7 +147,55 @@ Text Domain:
   .custom-header h1 {
     font-family: inherit;
   }
+
+  .menu {
+    height: 50px;
+    line-height: 50px;
+    display:flex;
+    list-style: none;
+  }
   
+  .menu li{
+    list-style: none;
+  }
+  .menu li:hover{
+    background: #0099cc;
+    color: white;
+  }
+
+
+  .menu li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0 10px;
+  }
+  .menu li.current_page_item {
+    background: #0099cc;
+    color: white;
+  }
+
+  .menu-item-has-children {
+    position: relative;
+    
+  }
+  li.menu-item-has-children:hover .sub-menu{
+    display: block;
+    
+  }
+  .sub-menu{
+    display:none;
+    
+    background: #cacaca;
+    color: black;
+    position: absolute;
+    padding-left: 0;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  
+  
+
   
 
   
