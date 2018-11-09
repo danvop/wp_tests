@@ -1,0 +1,13 @@
+/*
+ Theme Name:   Test Child Theme
+ Template:     twentyfifteen
+*/
+
+.site-header {
+    background: #99cc00;
+    color: white;
+}
+
+.site-title a{
+    color: white;
+}
