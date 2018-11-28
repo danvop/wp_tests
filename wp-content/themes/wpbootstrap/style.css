@@ -136,4 +136,10 @@ Text Domain:
   .blog-footer p:last-child {
     margin-bottom: 0;
   }
+
+  .post-thumb img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px
+  }
   
