@@ -142,4 +142,13 @@ Text Domain:
     height: auto;
     margin-bottom: 10px
   }
+
+  .blog-post-title a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .blog-post-title a:hover{
+    color: #555;
+  }
   
