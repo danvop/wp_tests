@@ -26,6 +26,9 @@
             
             <?php endif; ?>
             <?php the_content(); ?>
+            <hr>
+            <?php comments_template(); ?>
+            
           </div><!-- /.blog-post -->
             <?php endwhile; ?>
             <?php else : ?>
