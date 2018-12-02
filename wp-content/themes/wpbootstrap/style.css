@@ -151,4 +151,23 @@ h1, h2, h3, h4, h5, h6 {
 .blog-post-title a:hover{
   color: #555;
 }
+/* comments style section */
+.comments {
+  background: gray;
+}
+.comment {
+  margin-top: 10px;
+  background: #999;
+}
+
+.comment .depth-2{
+  margin-left: 20px;
+}
+
+.comment-body {
+  background: #aaa;
+}
+
+.comment-author img {
   
+}

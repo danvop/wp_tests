@@ -3,14 +3,14 @@
 <?php $args = array(
 	'walker'            => null,
 	'max_depth'         => '',
-	'style'             => 'ul',
+	'style'             => 'div',
 	'callback'          => null,
 	'end-callback'      => null,
 	'type'              => 'all',
-	'reply_text'        => 'Reply',
+	// 'reply_text'        => 'Reply',
 	'page'              => '',
 	'per_page'          => '',
-	'avatar_size'       => 32,
+	'avatar_size'       => 64,
 	'reverse_top_level' => null,
 	'reverse_children'  => '',
 	'format'            => 'html5', // or 'xhtml' if no 'HTML5' theme support
@@ -22,8 +22,8 @@
 wp_list_comments($args, $comments);
 
 $comments_args = array(
-    'label_submit'=>__('Send'),
-    'title_reply'=>'Write a Reply or Comment',   
+    // 'label_submit'=>__('send'),
+    // 'title_reply'=>'Write a Reply or Comment',   
     'comment_notes_after' => '',
     'comment_field' => '<p class="comment-form-comment"><label for="comment">' . _x( 'Comment', 'noun' ) . '</label><br /><textarea id="comment" name="comment" aria-required="true"></textarea></p>',
 );
