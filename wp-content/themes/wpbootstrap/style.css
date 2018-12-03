@@ -153,21 +153,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* comments style section */
 .comments {
-  background: gray;
+  
 }
 .comment {
   margin-top: 10px;
-  background: #999;
+  
 }
 
 .comment .depth-2{
   margin-left: 20px;
 }
-
-.comment-body {
-  background: #aaa;
+.comment .depth-3{
+  margin-left: 20px;
 }
 
-.comment-author img {
+.comment-body {
+  
+  padding-left: 10px;
+}
+.comment-meta {
+  padding-bottom: 20px;
+}
+
+.comment-meta img {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-reply-link {
+  
+  
+}
+
+.comment-form input, .comment-form textarea {
+  width: 100%;
   
 }
