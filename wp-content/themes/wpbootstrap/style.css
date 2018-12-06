@@ -189,3 +189,14 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   
 }
+
+.post-gallery {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.post-gallery h2 {
+  color: #fff;
+}
