@@ -1,16 +1,17 @@
-      <aside class="col-md-4 blog-sidebar">
-          <?php 
-          if(is_active_sidebar('sidebar')) : 
-            dynamic_sidebar('sidebar');
-          endif; 
-          ?>
-        </aside><!-- /.blog-sidebar -->
-
-      </div><!-- /.row -->
+<?php if(!is_front_page()) : ?>
+  <aside class="col-md-4 blog-sidebar">
+    <?php 
+    if(is_active_sidebar('sidebar')) : 
+      dynamic_sidebar('sidebar');
+    endif; 
+    ?>
+  </aside><!-- /.blog-sidebar -->
+<?php endif; ?>
+  </div><!-- /.row -->
 
 </main><!-- /.container -->
 <footer class="blog-footer">
-      <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      
       <p>
         <a href="#">Back to top</a>
       </p>
