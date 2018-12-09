@@ -2,7 +2,7 @@
   
     <main role="main" class="container">
       <div class="row">
-        <div class="col-md-8 blog-main border-top">
+        <div class="col-md-8 blog-main">
           
           <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
