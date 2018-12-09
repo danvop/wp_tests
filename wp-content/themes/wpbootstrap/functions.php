@@ -38,6 +38,30 @@ function wpb_init_widgets(){
         'before_title' => '<h4>',
         'after_title' => '</h4>'
     ));
+    register_sidebar(array(
+        'name' => 'Box1',
+        'id' => 'box1',
+        'before_widget' => '<div class="card mb-4 shadow-sm">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="card-header"><h4 class="my-0 font-weight-normal">',
+        'after_title' => '</h4></div>'
+    ));
+    register_sidebar(array(
+        'name' => 'Box2',
+        'id' => 'box2',
+        'before_widget' => '<div class="card mb-4 shadow-sm">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="card-header"><h4 class="my-0 font-weight-normal">',
+        'after_title' => '</h4></div>'
+    ));
+    register_sidebar(array(
+        'name' => 'Box3',
+        'id' => 'box3',
+        'before_widget' => '<div class="card mb-4 shadow-sm">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="card-header"><h4 class="my-0 font-weight-normal">',
+        'after_title' => '</h4></div>'
+    ));
 }
 
 add_action('widgets_init','wpb_init_widgets');

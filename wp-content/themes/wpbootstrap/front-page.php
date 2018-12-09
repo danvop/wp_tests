@@ -72,51 +72,17 @@
 </div>
 <div class="container">
     <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Free</h4>
-            </div>
-            <div class="card-body">
-            <i class="fas fa-dollar-sign"></i>
-            <ul class="list-unstyled mt-3 mb-4">
-                <li>10 users included</li>
-                <li>2 GB of storage</li>
-                <li>Email support</li>
-                <li>Help center access</li>
-            </ul>
-            
-            </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Pro</h4>
-            </div>
-            <div class="card-body">
-            <i class="fas fa-adjust"></i>
-            <ul class="list-unstyled mt-3 mb-4">
-                <li>20 users included</li>
-                <li>10 GB of storage</li>
-                <li>Priority email support</li>
-                <li>Help center access</li>
-            </ul>
-            
-            </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-            <h4 class="my-0 font-weight-normal">Enterprise</h4>
-            </div>
-            <div class="card-body">
-            <i class="fas fa-wrench"></i>
-            <ul class="list-unstyled mt-3 mb-4">
-                <li>30 users included</li>
-                <li>15 GB of storage</li>
-                <li>Phone and email support</li>
-                <li>Help center access</li>
-            </ul>
-            
-            </div>
-        </div>
+        <?php if(is_active_sidebar('box1')) : ?>
+            <?php dynamic_sidebar('box1'); ?>
+        <?php endif; ?>
+        <?php if(is_active_sidebar('box2')) : ?>
+                <?php dynamic_sidebar('box2'); ?>
+        <?php endif; ?>
+        <?php if(is_active_sidebar('box3')) : ?>
+                <?php dynamic_sidebar('box3'); ?>
+        <?php endif; ?>
+        
+        
     </div>
 </div>
 </div>
