@@ -1,5 +1,5 @@
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html class="h-100" <?php language_attributes(); ?>>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,7 +22,7 @@
     <?php wp_head(); ?>
   </head>
 
-  <body>
+  <body class="h-100 d-flex flex-column">
 
 <div class="container">
     <header class="blog-header py-3">
@@ -66,12 +66,14 @@
     </nav>
 <div role="main" class="container">
 
-<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-      <h1 class="display-4">Pricing</h1>
-      <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+<div class="jumbotron text-center">
+    <h1 class="display-4">Pricing</h1>
+    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-primary">Browse posts</a>
 </div>
 <div class="container">
     <div class="card-deck mb-3 text-center">
+        <!-- Pricing plans -->
         <?php if(is_active_sidebar('box1')) : ?>
             <?php dynamic_sidebar('box1'); ?>
         <?php endif; ?>
@@ -81,15 +83,13 @@
         <?php if(is_active_sidebar('box3')) : ?>
                 <?php dynamic_sidebar('box3'); ?>
         <?php endif; ?>
-        
-        
     </div>
 </div>
 </div>
 
 
 </div><!-- /.container -->
-<footer class="blog-footer">
+<footer class="blog-footer mt-auto">
       
 <p>
 <a href="#">Back to top</a>
