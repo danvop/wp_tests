@@ -48,7 +48,7 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        
+   
         <?php
         wp_nav_menu( array(
         'theme_location'  => 'primary',
@@ -64,13 +64,15 @@
         
     </div>
     </nav>
-<div role="main" class="container">
-
-<div class="jumbotron text-center">
-    <h1 class="display-4">Pricing</h1>
-    <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
-    <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>" class="btn btn-primary">Browse posts</a>
 </div>
+<section class="showcase">
+    <div class="container">
+    <h1>Custom Bootstrap Wordpress Theme</h1>
+    <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo quam</p>
+    <a class="btn btn-primary btn-lg">Read More</a>
+    </div>
+</section>
+
 <div class="container">
     <div class="card-deck mb-3 text-center">
         <!-- Pricing plans -->
