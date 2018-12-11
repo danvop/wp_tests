@@ -65,3 +65,6 @@ function wpb_init_widgets(){
 }
 
 add_action('widgets_init','wpb_init_widgets');
+
+// Front-page Customizer File
+require get_template_directory(). '/inc/customizer.php';
