@@ -20,6 +20,11 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
     <link href="<?php bloginfo('stylesheet_url'); ?>" rel="stylesheet">
     <?php wp_head(); ?>
+    <style>
+        .showcase {
+            background:url(<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>) no-repeat center center;
+        }
+    </style>
   </head>
 
   <body class="h-100 d-flex flex-column">
