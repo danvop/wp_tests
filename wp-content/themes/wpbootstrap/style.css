@@ -151,9 +151,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #555;
 }
 /* comments style section */
-.comments {
-  
-}
+
 .comment {
   margin-top: 10px;
   
@@ -177,11 +175,6 @@ h1, h2, h3, h4, h5, h6 {
 .comment-meta img {
   float: left;
   margin-right: 10px;
-}
-
-.comment-reply-link {
-  
-  
 }
 
 .comment-form input, .comment-form textarea {
