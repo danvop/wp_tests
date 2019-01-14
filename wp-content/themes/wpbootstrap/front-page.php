@@ -102,12 +102,20 @@
 <a href="#">Back to top</a>
 </p>
 
+<!-- Social Media Icons  -->
+
 <a class="blog-footer-link" href="#"><i class="fab fa-twitter"></i></a>
+
 <a class="blog-footer-link" href="#"><i class="fab fa-facebook"></i></a>
 <a class="blog-footer-link" href="#"><i class="fab fa-instagram"></i></a>
+
 <?php if(is_active_sidebar('facebook_link')) : ?>
     <?php dynamic_sidebar('facebook_link'); ?>
 <?php endif; ?>
+
+
+
+<!-- Social Media Icons  -->
 
 </footer>
 <!-- wordpress adminBar -->
