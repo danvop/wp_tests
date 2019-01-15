@@ -53,6 +53,39 @@ function wpb_customize_register($wp_customize){
         'section' => 'showcase',
         'priority' => 5
     ));
+    //End Showcase Section
+
+    //Footer Socila Media Links Section
+
+    $wp_customize->add_section( 'footer_social_icons' , array(
+    'title' => __( 'Footer Social Icons', 'wpbootstrap' ),
+    'priority' => 105, // Before Widgets.
+    ));
+
+    $wp_customize->add_setting('social_icon_1', array(
+        'default' => __('fab fa-facebook', 'wpbootstrap'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('social_icon_1', array(
+        'label' => __('Social Icon 1','wpbootstrap'),
+        'description' => __('Use FontAwesome icons'),
+        'section' => 'footer_social_icons',
+        'priority' => 1
+    ));
+
+    $wp_customize->add_setting('social_url_1', array(
+        'default' => __('#', 'wpbootstrap'),
+        'type' => 'theme_mod'
+    ));
+    $wp_customize->add_control('social_url_1', array(
+        'label' => __('Social URL 1','wpbootstrap'),
+        'description' => __('Insert social URL'),
+        'section' => 'footer_social_icons',
+        'priority' => 2
+    ));
+
+
+
 }
 
 add_action('customize_register', 'wpb_customize_register');

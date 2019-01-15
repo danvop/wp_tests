@@ -106,12 +106,21 @@
 
 <a class="blog-footer-link" href="#"><i class="fab fa-twitter"></i></a>
 
-<a class="blog-footer-link" href="#"><i class="fab fa-facebook"></i></a>
 <a class="blog-footer-link" href="#"><i class="fab fa-instagram"></i></a>
 
+<!-- Theme Customizer Way -->
+
+<?php if(get_theme_mod('social_icon_1')) : ?>
+<a class="blog-footer-link" href="<?= get_theme_mod('social_url_1') ?>">
+    <i class="<?= get_theme_mod('social_icon_1') ?>"></i></a>
+<?php endif; ?>
+
+<!-- HTML Widget Way -->
 <?php if(is_active_sidebar('facebook_link')) : ?>
     <?php dynamic_sidebar('facebook_link'); ?>
 <?php endif; ?>
+
+
 
 
 
